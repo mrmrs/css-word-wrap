@@ -23,19 +23,19 @@ or download the css on github and include in your project.
 .wwbw { word-wrap: break-word; }
 .wwi {  word-wrap: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .wwn-ns {  word-wrap: normal; }
   .wwbw-ns { word-wrap: break-word; }
   .wwi-ns {  word-wrap: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .wwn-m {  word-wrap: normal; }
   .wwbw-m { word-wrap: break-word; }
   .wwi-m {  word-wrap: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .wwn-l {  word-wrap: normal; }
   .wwbw-l { word-wrap: break-word; }
   .wwi-l {  word-wrap: inherit; }

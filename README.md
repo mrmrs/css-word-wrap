@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-word-wrap)
 ## File Size
 
 573B word-wrap.css
-443B word-wrap.min.css
+443B word-wrap.min.css 
+163B minified and gzipped
 
 ## The Code
 ```

@@ -8,9 +8,9 @@
 .wwi {  word-wrap: inherit; }
 
 @media screen and (min-width: 48em) {
-  .wwn-ns {  word-wrap: normal; }
-  .wwbw-ns { word-wrap: break-word; }
-  .wwi-ns {  word-wrap: inherit; }
+  .wwn-s {  word-wrap: normal; }
+  .wwbw-s { word-wrap: break-word; }
+  .wwi-s {  word-wrap: inherit; }
 }
 
 @media screen and (min-width:48em) and (max-width: 64em) {

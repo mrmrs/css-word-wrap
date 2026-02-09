@@ -1,38 +1,44 @@
 {
   "name": "css-word-wrap",
-  "style": "word-wrap.css",
-  "version": "1.0.7",
-  "homepage": "http://github.com/mrmrs/css-word-wrap",
-  "description": "Css module of single purpose classes for word wrap",
+  "version": "2.0.0",
+  "description": "Functional CSS for word-wrap",
+  "style": "dist/word-wrap.css",
+  "main": "dist/word-wrap.css",
+  "exports": {
+    ".": "./dist/word-wrap.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "word-wrap"
+    "word-wrap",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-word-wrap": {
+  "homepage": "https://github.com/mrmrs/css-word-wrap",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-word-wrap.git"
+    "url": "https://github.com/mrmrs/css-word-wrap.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-word-wrap/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-word-wrap/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }

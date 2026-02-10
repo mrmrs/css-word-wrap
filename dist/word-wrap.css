@@ -1,53 +1,53 @@
-.wwn {
+.ww-n {
   word-wrap: normal;
 }
 
-.wwbw {
+.ww-bw {
   word-wrap: break-word;
 }
 
-.wwi {
+.ww-i {
   word-wrap: inherit;
 }
 
 @media screen and (width >= 32em) {
-  .wwn-s {
+  .ww-n-s {
     word-wrap: normal;
   }
 
-  .wwbw-s {
+  .ww-bw-s {
     word-wrap: break-word;
   }
 
-  .wwi-s {
+  .ww-i-s {
     word-wrap: inherit;
   }
 }
 
 @media screen and (width >= 48em) {
-  .wwn-m {
+  .ww-n-m {
     word-wrap: normal;
   }
 
-  .wwbw-m {
+  .ww-bw-m {
     word-wrap: break-word;
   }
 
-  .wwi-m {
+  .ww-i-m {
     word-wrap: inherit;
   }
 }
 
 @media screen and (width >= 96em) {
-  .wwn-l {
+  .ww-n-l {
     word-wrap: normal;
   }
 
-  .wwbw-l {
+  .ww-bw-l {
     word-wrap: break-word;
   }
 
-  .wwi-l {
+  .ww-i-l {
     word-wrap: inherit;
   }
 }

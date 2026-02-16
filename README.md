@@ -1,97 +1,80 @@
-# css-word-wrap 0.0.6
+# css-word-wrap
 
-Css module of single purpose classes for word wrap
+Functional CSS for word-wrap
 
-#### Stats
+## Filesize
 
-183 | 12 | 12
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/word-wrap.css` | 593 bytes |
+| `dist/word-wrap.min.css` | 417 bytes (147 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-word-wrap
-```
-
-#### With Git
-
-```
-git clone https://github.com/tachyons-css/css-word-wrap
+```sh
+npm install css-word-wrap
 ```
 
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-word-wrap";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
-```
-
-#### Using the CSS
-
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-word-wrap">
+<link rel="stylesheet" href="https://unpkg.com/css-word-wrap/dist/word-wrap.min.css">
 ```
 
-#### Development
+### Direct
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
-
-## The CSS
-
-```css
-/*
-   WORD WRAP
-*/
-.wwn { word-wrap: normal; }
-.wwbw { word-wrap: break-word; }
-.wwi { word-wrap: inherit; }
-@media screen and (min-width: 48em) {
- .wwn-ns { word-wrap: normal; }
- .wwbw-ns { word-wrap: break-word; }
- .wwi-ns { word-wrap: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .wwn-m { word-wrap: normal; }
- .wwbw-m { word-wrap: break-word; }
- .wwi-m { word-wrap: inherit; }
-}
-@media screen and (min-width: 64em) {
- .wwn-l { word-wrap: normal; }
- .wwbw-l { word-wrap: break-word; }
- .wwi-l { word-wrap: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-word-wrap/dist/word-wrap.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.ww-n` | `word-wrap: normal;` |
+| `.ww-bw` | `word-wrap: break-word;` |
+| `.ww-i` | `word-wrap: inherit;` |
+| `.ww-n-s` | `word-wrap: normal;` |
+| `.ww-bw-s` | `word-wrap: break-word;` |
+| `.ww-i-s` | `word-wrap: inherit;` |
+| `.ww-n-m` | `word-wrap: normal;` |
+| `.ww-bw-m` | `word-wrap: break-word;` |
+| `.ww-i-m` | `word-wrap: inherit;` |
+| `.ww-n-l` | `word-wrap: normal;` |
+| `.ww-bw-l` | `word-wrap: break-word;` |
+| `.ww-i-l` | `word-wrap: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.ww-n-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/word-wrap.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/word-wrap.css` — formatted
+- `dist/word-wrap.min.css` — minified
 
 ## License
 
-ISC
+MIT

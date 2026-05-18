@@ -6,8 +6,8 @@ Functional CSS for word-wrap
 
 | File | Size |
 |------|------|
-| `dist/word-wrap.css` | 593 bytes |
-| `dist/word-wrap.min.css` | 417 bytes (147 Gzipped) |
+| `dist/word-wrap.css` | 581 bytes |
+| `dist/word-wrap.min.css` | 405 bytes (146 Gzipped) |
 
 ## Install
 
@@ -39,18 +39,18 @@ npm install css-word-wrap
 
 | Class   | Value                    |
 |---------|--------------------------|
-| `.ww-n` | `word-wrap: normal;` |
-| `.ww-bw` | `word-wrap: break-word;` |
-| `.ww-i` | `word-wrap: inherit;` |
-| `.ww-n-s` | `word-wrap: normal;` |
-| `.ww-bw-s` | `word-wrap: break-word;` |
-| `.ww-i-s` | `word-wrap: inherit;` |
-| `.ww-n-m` | `word-wrap: normal;` |
-| `.ww-bw-m` | `word-wrap: break-word;` |
-| `.ww-i-m` | `word-wrap: inherit;` |
-| `.ww-n-l` | `word-wrap: normal;` |
-| `.ww-bw-l` | `word-wrap: break-word;` |
-| `.ww-i-l` | `word-wrap: inherit;` |
+| `.wwn` | `word-wrap: normal;` |
+| `.wwbw` | `word-wrap: break-word;` |
+| `.wwi` | `word-wrap: inherit;` |
+| `.wwn-s` | `word-wrap: normal;` |
+| `.wwbw-s` | `word-wrap: break-word;` |
+| `.wwi-s` | `word-wrap: inherit;` |
+| `.wwn-m` | `word-wrap: normal;` |
+| `.wwbw-m` | `word-wrap: break-word;` |
+| `.wwi-m` | `word-wrap: inherit;` |
+| `.wwn-l` | `word-wrap: normal;` |
+| `.wwbw-l` | `word-wrap: break-word;` |
+| `.wwi-l` | `word-wrap: inherit;` |
 
 ### Responsive
 
@@ -62,7 +62,7 @@ Responsive variants are available for each class with the following suffixes:
 | `-m`   | `min-width: 48em`        |
 | `-l`   | `min-width: 96em`        |
 
-Example: `.ww-n-m` applies the property at the medium breakpoint and above.
+Example: `.wwn-m` applies the property at the medium breakpoint and above.
 
 ## Building
 
